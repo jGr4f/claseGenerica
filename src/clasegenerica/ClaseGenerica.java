@@ -19,6 +19,11 @@ public class ClaseGenerica {
                 String ed = s.nextLine();
                 int eda = Integer.parseInt(ed);
                 Persona per = new Persona(anom);
+                
+                System.out.println("Digita la eps de " + anom);
+                String ep = s.nextLine();
+                
+                per.setEps(ep);
 
                 Pair<Persona, Integer> pair = new Pair<>();
                 pair.setPer(per);
@@ -29,7 +34,9 @@ public class ClaseGenerica {
 
             System.out.println("Digita el numero del registro a consultar: ");
             int cons = s.nextInt() -1;
-            System.out.println("El registro consultado es: " + bPersonas.get(cons));
+            
+            System.out.println("El registro consultado es: " + ((Pair)bPersonas.get(cons)).getPer() );
+            System.out.println("Programa finalizado");
 
         } else {
             System.out.println("Programa finalizado.");
