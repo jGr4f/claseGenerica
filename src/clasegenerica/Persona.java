@@ -8,10 +8,25 @@ package clasegenerica;
 class Persona {
     
     private String nombre;
+    private String eps;
 
     public Persona(String nombre) {
         this.nombre = nombre;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getEps() {
+        return eps;
+    }
+
+    public void setEps(String eps) {
+        this.eps = eps;
+    }
+    
+    
     
     
 }
